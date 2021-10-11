@@ -140,17 +140,18 @@ public class AxisDragInteractable : XRBaseInteractable
         }
     }
 
-    protected override void OnSelectEnter(XRBaseInteractor interactor)
+    protected override void OnSelectEntered(SelectEnterEventArgs interactorArgs)
     {
-        base.OnSelectEnter(interactor);
-
+        base.OnSelectEntered(interactorArgs);
+        
+        var interactor = interactorArgs.interactor;
         m_GrabbedOffset = interactor.transform.position - transform.position;
         m_GrabbingInteractor = interactor;
     }
 
-    protected override void OnSelectExit(XRBaseInteractor interactor)
+    protected override void OnSelectExited(XRBaseInteractor interactorArgs)
     {
-        base.OnSelectExit(interactor);
+        base.OnSelectExited(interactorArgs);
 
         if (SnapOnlyOnRelease && Steps != 0)
         {
