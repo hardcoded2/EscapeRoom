@@ -12,12 +12,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class XRReleaseController : XRController
 {
     bool m_Selected;
-
+    /*
     FieldInfo m_SelectionStateFieldInfo;
     
     FieldInfo m_SelectionStateActivatedThisFrameInfo;
     FieldInfo m_SelectionStateDectivatedThisFrameInfo;
     FieldInfo m_SelectionStateActiveInfo;
+    */
 
     bool m_Active = false;
 
@@ -26,6 +27,8 @@ public class XRReleaseController : XRController
         base.OnEnable();
 
         var interactionStateType = typeof(XRController).Assembly.GetType("UnityEngine.XR.Interaction.Toolkit.XRController+InteractionState");
+        //var wat = XRControllerState.
+        
         
         m_SelectionStateActivatedThisFrameInfo = interactionStateType.GetField("activatedThisFrame");
         m_SelectionStateDectivatedThisFrameInfo = interactionStateType.GetField("deActivatedThisFrame");
@@ -36,6 +39,9 @@ public class XRReleaseController : XRController
 
     protected void LateUpdate()
     {
+        GetControllerState(out XRControllerState controllerState);
+        var selectInteractionState = controllerState.selectInteractionState;
+        
         object o;
         o = m_SelectionStateFieldInfo.GetValue(this);
 
@@ -43,6 +49,7 @@ public class XRReleaseController : XRController
         {
             if (!m_Active)
             {
+                controllerState.
                 m_SelectionStateActivatedThisFrameInfo.SetValue(o, true);
                 m_SelectionStateActiveInfo.SetValue(o, true);
                 m_Active = true;
