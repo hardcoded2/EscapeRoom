@@ -49,7 +49,7 @@
   },
   "scopedRegistries": [
     {
-      "name": "HTC",
+      "name": "VIVE",
       "url": "https://npm-registry.vive.com",
       "scopes": [
         "com.htc.upm"
