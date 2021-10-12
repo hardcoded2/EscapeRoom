@@ -79,3 +79,8 @@ crashlytics-build.properties
 #ide
 /.vs/
 /.idea/
+
+/Assets/Wave/Essence
+/Assets/Wave/Essence.meta
+
+
