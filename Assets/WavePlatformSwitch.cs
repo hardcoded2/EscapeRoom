@@ -10,12 +10,12 @@ public class WavePlatformSwitch : MonoBehaviour
     {
         //2021/11/09 20:54:36.397 32000 32044 Info Unity Device name HTC VIVE Focus 3 device type Handheld
 
-        Debug.Log($"1Device name {SystemInfo.deviceModel} device type {SystemInfo.deviceType}");
-        if (SystemInfo.deviceModel == "HTC VIVE Focus 3")
+        Debug.Log($"ASINK: 1Device name {SystemInfo.deviceModel} device type {SystemInfo.deviceType}");
+        if (SystemInfo.deviceModel == "htc_flow")
         {
             Debug.Log($"1Switching vive focus grip");
             var xrController = GetComponent<XRController>();
-            xrController.selectUsage = InputHelpers.Button.Grip;
+            xrController.selectUsage = InputHelpers.Button.MenuButton;
             xrController.enabled = true;
         }
         else

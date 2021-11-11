@@ -11464,7 +11464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 858314766, guid: d45e8a6999317d2428a51593da44d3ab, type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 501809456693203601, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -11474,7 +11474,7 @@ PrefabInstance:
     - target: {fileID: 501809456693203601, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1837324663945620824, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -11484,7 +11484,7 @@ PrefabInstance:
     - target: {fileID: 1837324663945620824, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1837324663945620828, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -11584,7 +11584,7 @@ PrefabInstance:
     - target: {fileID: 1837324665045843325, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2244328514690306571, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -11594,7 +11594,7 @@ PrefabInstance:
     - target: {fileID: 2244328514690306571, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3487965464052155653, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -11609,7 +11609,7 @@ PrefabInstance:
     - target: {fileID: 4198832646252843036, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       propertyPath: m_SelectUsage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8509901044822395909, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
